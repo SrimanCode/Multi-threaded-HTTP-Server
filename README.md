@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is an implementation of a multi-threaded HTTP server in C using **pthreads**. The server is capable of handling multiple concurrent client connections to process HTTP GET and PUT requests efficiently. This was developed as part of an assignment for the CSE 130 course at San Jose State University, Winter 2023.
+This project is an implementation of a multi-threaded HTTP server in C using **pthreads**. The server is capable of handling multiple concurrent client connections to process HTTP GET and PUT requests efficiently.
 
 ## Goals of the Project
 
