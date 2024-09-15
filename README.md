@@ -34,15 +34,19 @@ To compile the project, use the provided `Makefile`. Simply run the following co
 - ./httpserver [-t threads] <port>
 
 ### Project Structure
-├── asgn2_helper_funcs.h     # Helper functions
-├── connection.h             # Handles client-server connection
-├── debug.h                  # Debugging utilities
-├── httpserver.c             # Main HTTP server implementation
-├── Makefile                 # Build configuration
-├── queue.h                  # Task queue implementation
-├── request.h                # HTTP request handling
-├── response.h               # HTTP response handling
-└── README.md                # Project documentation
+- asgn2_helper_funcs.h     # Helper functions
+- connection.h             # Handles client-server connection
+- debug.h                  # Debugging utilities
+- httpserver.c             # Main HTTP server implementation
+-  Makefile                 # Build configuration
+-  queue.h                  # Task queue implementation
+-  quest.h                # HTTP request handling
+-  response.h               # HTTP response handling
+-  EADME.md                # Project documentation
 
+### Key Challenges
+- **Race Conditions**: Ensuring thread-safe access to shared resources like file I/O by implementing mutex locks and condition variables.
+- **Deadlocks**: Avoided potential deadlocks by properly ordering lock acquisitions and using non-blocking synchronization techniques.
+- **Concurrency Bugs**: Thoroughly tested and debugged the multi-threaded application using tools like gdb and resolved segmentation faults caused by improper thread synchronization.
 
 
